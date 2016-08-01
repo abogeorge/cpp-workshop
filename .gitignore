@@ -29,4 +29,5 @@
 *.app
 
 # build, lib and bin folders
-Debug/
+MacroExercise/Debug/
+MacroExercise/MacroExercise/Debug/
