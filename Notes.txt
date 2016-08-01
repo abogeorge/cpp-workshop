@@ -12,3 +12,16 @@
  - La includerea unui header intr-un cpp, se pot folosi def guard cu numele lui,
    optimizare la compilare
  - Pentru macro multiline se defineste cu do {} while(0) fara ";"
+ Exercitiul 1: -
+
+** Pointers **
+ - SET "_NO_DEBUG_HEAP=1" - de adaugat in vs pentru a elimina rescanul la debug
+ - NULL este void pointer de 0
+ - nullptr introdus in c++11
+ - auto_ptr are probleme de ownership: auto_ptr a = auto_ptr b; b va fi sters;
+   a nu se folosi in containere.
+
+** Refrences **
+ - Syntactic sugar for pointers
+ - Toate referinteles sunt const
+ 

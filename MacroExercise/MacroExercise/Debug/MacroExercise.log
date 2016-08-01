@@ -1,3 +1,6 @@
 ﻿  main.cpp
+d:\projects\cpp\workshop-cvc\cpp-workshop\macroexercise\macroexercise\main.cpp(75): warning C4456: declaration of 'i' hides previous local declaration
+  d:\projects\cpp\workshop-cvc\cpp-workshop\macroexercise\macroexercise\main.cpp(71): note: see declaration of 'i'
+d:\projects\cpp\workshop-cvc\cpp-workshop\macroexercise\macroexercise\main.cpp(57): warning C4189: 'lVal': local variable is initialized but not referenced
   MacroExercise.vcxproj -> D:\Projects\CPP\workshop-cvc\cpp-workshop\MacroExercise\Debug\MacroExercise.exe
   MacroExercise.vcxproj -> D:\Projects\CPP\workshop-cvc\cpp-workshop\MacroExercise\Debug\MacroExercise.pdb (Full PDB)

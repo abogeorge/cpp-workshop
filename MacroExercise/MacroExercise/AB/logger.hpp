@@ -10,39 +10,39 @@
 #define AB_LOGGER std::cout << __FILE__ << "@" << __LINE__ << " "
 
 #if AB_LOG_LEVEL >= 50
-#define AB_FATAL(m) AB_LOGGER << m
-#define AB_ERROR(m) AB_LOGGER << m
-#define AB_WARN(m) AB_LOGGER << m
-#define AB_DEBUG(m) AB_LOGGER << m
-#define AB_TRACE(m) AB_LOGGER << m
+#define AB_FATAL(m) AB_LOGGER << m << std::endl
+#define AB_ERROR(m) AB_LOGGER << m << std::endl
+#define AB_WARN(m) AB_LOGGER << m << std::endl
+#define AB_DEBUG(m) AB_LOGGER << m << std::endl
+#define AB_TRACE(m) AB_LOGGER << m << std::endl
 #else // 50
 
 #if AB_LOG_LEVEL >= 40
-#define AB_FATAL(m) AB_LOGGER << m
-#define AB_ERROR(m) AB_LOGGER << m
-#define AB_WARN(m) AB_LOGGER << m
-#define AB_DEBUG(m) AB_LOGGER << m
+#define AB_FATAL(m) AB_LOGGER << m << std::endl
+#define AB_ERROR(m) AB_LOGGER << m << std::endl
+#define AB_WARN(m) AB_LOGGER << m << std::endl
+#define AB_DEBUG(m) AB_LOGGER << m << std::endl
 #define AB_TRACE(m) AB_NOOP()
 #else // 40
 
 #if AB_LOG_LEVEL >= 30
-#define AB_FATAL(m) AB_LOGGER << m
-#define AB_ERROR(m) AB_LOGGER << m
-#define AB_WARN(m) AB_LOGGER << m
+#define AB_FATAL(m) AB_LOGGER << m << std::endl
+#define AB_ERROR(m) AB_LOGGER << m << std::endl
+#define AB_WARN(m) AB_LOGGER << m << std::endl
 #define AB_DEBUG(m) AB_NOOP()
 #define AB_TRACE(m) AB_NOOP()
 #else // 30
 
 #if AB_LOG_LEVEL >= 20
-#define AB_FATAL(m) AB_LOGGER << m
-#define AB_ERROR(m) AB_LOGGER << m
+#define AB_FATAL(m) AB_LOGGER << m << std::endl
+#define AB_ERROR(m) AB_LOGGER << m << std::endl
 #define AB_WARN(m) AB_NOOP() << m
 #define AB_DEBUG(m) AB_NOOP()
 #define AB_TRACE(m) AB_NOOP()
 #else // 20
 
 #if AB_LOG_LEVEL >= 10
-#define AB_FATAL(m) AB_LOGGER << m
+#define AB_FATAL(m) AB_LOGGER << m << std::endl
 #define AB_ERROR(m) AB_NOOP() << m
 #define AB_WARN(m) AB_NOOP() << m
 #define AB_DEBUG(m) AB_NOOP()
