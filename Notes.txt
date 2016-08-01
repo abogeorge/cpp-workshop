@@ -8,3 +8,7 @@
  - macrourile sunt globale; litere mari si underscore; dupa definire ";"
  - macrourile sunt de evitat; de folosit cu variabile, nu cu expresii
  - String-ify and Token pasting
+ - Def guards, incep cu _NAMESPACE_NUMEHEADER_H_
+ - La includerea unui header intr-un cpp, se pot folosi def guard cu numele lui,
+   optimizare la compilare
+ - Pentru macro multiline se defineste cu do {} while(0) fara ";"
