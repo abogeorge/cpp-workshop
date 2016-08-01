@@ -1,0 +1,10 @@
+===== DAY 1 ===== 
+
+** Macros **
+ - mai vechi, template functions permit mai multe verificari.
+ * Special preprocessor directives (look them up)
+ - #define smtg
+ * try: (i++) * (i++)
+ - macrourile sunt globale; litere mari si underscore; dupa definire ";"
+ - macrourile sunt de evitat; de folosit cu variabile, nu cu expresii
+ - String-ify and Token pasting
