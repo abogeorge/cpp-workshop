@@ -41,6 +41,15 @@ namespace ab
 #define AB_NOOP() struct _AB_##__LINE__
 
 
+
+//
+
+#define AB_DISABLE_COPY(Class) \
+Class(const Class&);\
+Class& operator=(const Class&)
+
+//
+
 // Disable warnings for Microsoft Compiler
 
 #if defined(_MSC_VER)

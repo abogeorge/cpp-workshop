@@ -36,3 +36,7 @@
 
 ** Pointers **
  - static const TestStruct& getConstant() - ramane cea mai buna varianta de apel	
+
+** Classes **
+ - pentru a elimina const a unui obiect folosim const_cast<>()
+ 

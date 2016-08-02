@@ -148,11 +148,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="main_day2_1.cpp" />
+    <ClCompile Include="AB\logger.cpp" />
+    <ClCompile Include="Inventory.cpp" />
+    <ClCompile Include="main_day2_3.cpp" />
+    <ClCompile Include="Pokemon.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AB\common.hpp" />
     <ClInclude Include="AB\logger.hpp" />
+    <ClInclude Include="Inventory.hpp" />
+    <ClInclude Include="Pokemon.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
