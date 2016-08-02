@@ -25,3 +25,14 @@
  - Syntactic sugar for pointers
  - Toate referinteles sunt const
  
+===== DAY 2 ===== 
+
+** Functions **
+ - la get de obiecte const Object& getObject(); La retur de primitve, nu este nevoie de referinta.
+ - in loc de return, in corpul functiei void foo(std::string& toReturn);
+ - in c++ din cauza name mangling, la overloading conteaza doar semnatura functiei, nu si tipul returnat:
+	int foo(int b);
+	std::string foo(int b); // sunt acelasi lucru
+
+** Pointers **
+ - static const TestStruct& getConstant() - ramane cea mai buna varianta de apel	
