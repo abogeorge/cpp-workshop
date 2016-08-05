@@ -40,3 +40,49 @@
 ** Classes **
  - pentru a elimina const a unui obiect folosim const_cast<>()
  
+===== DAY 3 ===== 
+
+** Recap **
+ - var -> static (globale); -> const (locale); ->  copy (const&)
+ - fc -> static; -> param: const&
+ - class -> fc/methods -> const &; const; -> macro DISABLE_COPY;
+		 -> membri -> private
+
+** Qt4 Build **
+ - unpack Qt4.7z
+ - edit QtBuildConsole.cmd
+ - edit QtVisualStudio.cmd
+ - unpack strawberry-perl-5.24.0.1-64bit-PDL.zip
+ - unpack sqlite-amalgamation-3130000.zip and move content to Qt4/src/3rdparty/sqlite
+ - run QtBuildConsole.cmd and type:
+	- configure -platform win32-msvc2015 -release -opensource -confirm-license -no-dsp -no-vcproj -plugin-sql-odbc -largefile -openssl -no-dbus -no-webkit -no-script -no-scripttools -no-declarative -no-declarative-debug -no-native-gestures -mp  -nomake examples -nomake demos -nomake tests -nomake tools
+	- jom\jom.exe -j8
+	
+** Debug Dump cu WinDbg **	
+ - Open dump in WinDbg
+ - Symbol file path
+ 
+** STL **
+ 
+** QT **
+** QT STL **
+ - QVector <>
+ - QList <> - de evitat; QStringList <>; QVariantList <>;
+ - QSet <> - elemente unice, DAR nesortate
+ - QMap <,>
+ - QHash <,> - recomandat fata de QMap pentru chei mari;
+ - QString - utf16; probleme la conversii
+ - QVariant - asemanator Object din Java; QVariant x(3); x.toInt(); x.toString();
+ - QObject
+ 
+** Config VS Project **
+ - Additional include dirs to Qt4/include
+ - Additional include libraries to Qt4/lib
+ - Additional libraries:
+	QtCore4.lib
+	QtNetwork4.lib
+	QtSql4.lib
+	QtGui4.lib
+ - Run QtVisualStudio.cmd
+
+		 

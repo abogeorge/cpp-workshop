@@ -1,6 +1,8 @@
 ﻿#include "Pokemon.hpp"
 #include "AB/logger.hpp"
 
+
+
 WF_MSW_DISABLE(MSW_STL)
 #include <iostream>
 WF_MSW_RESTORE();
